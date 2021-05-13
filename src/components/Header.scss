@@ -1,10 +1,12 @@
-@use '../partials/variables' as *;
+@import '../partials/variables';
+
 
 .header {
     height: 10.563rem;
-    padding: 0 1rem;
+    // padding: 0 1rem;
 
     &__navigation {
+        padding: 0 1rem;
     }
 
     &__list{
@@ -22,10 +24,10 @@
     }
 
     &__search-bar{
-        width: 89%;
+        width: 92%;
         padding: 0.937rem;
-        background-color: ivory;
-        border: 1px solid lightgrey;
+        background-color: $text-field-background-color;
+        border: 1px solid $text-field-border-color;
         border-radius: 0.312rem;
     }
 
@@ -40,10 +42,14 @@
     &__upload-box {
         color: white;
         margin-right: 1rem;
-        background-color: skyblue;
+        background-color: $primary-cta-text-color;
         border: 1px solid skyblue;
         border-radius: 0.375rem;
         width: 100%;
+
+        &:hover {
+            background-color: $primary-cta-hover-color;
+        }
     }
 
     &__user-image{
