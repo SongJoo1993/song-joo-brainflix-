@@ -13,4 +13,5 @@ Implementation Requirements
         - <video> tag: 
             - No need to be function
             -  all visual elements of the video player must exist on the deliverable
-            
+
+When clicking item of video list => its information passed to Hero, Comment

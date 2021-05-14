@@ -2,6 +2,7 @@ import './Header.scss';
 import userImage from "../assets/Images/Mohan-muruge.jpg";
 import logo from "../assets/Logo/Logo-brainflix.svg";
 
+
 function Header() {
     return (
         <header className="header">
