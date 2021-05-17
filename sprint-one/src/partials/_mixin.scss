@@ -1,0 +1,32 @@
+//Media Query
+@mixin tablet {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: 1280px) {
+        @content;
+    }
+}
+
+// Global Mixin
+
+@mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@mixin flex-direction($direction) {
+    display: flex;
+    flex-direction: $direction;
+}
+
+// Comment 
+
+@mixin comment-font {
+    font-size: 0.813rem;
+    line-height: 1.125rem;
+}

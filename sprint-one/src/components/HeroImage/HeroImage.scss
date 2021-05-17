@@ -1,0 +1,24 @@
+@import '../../partials/font';
+@import '../../partials/mixin';
+@import '../../partials/variables';
+
+.hero__image-box {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.hero__image-content {
+    width: 100%;
+    height: auto;
+    background-color: black;
+
+    @include tablet {
+        width: 90%;
+    }
+
+    @include desktop {
+        height: 50vh;
+        width: 70%;
+    }
+}

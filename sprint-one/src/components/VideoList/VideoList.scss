@@ -1,0 +1,35 @@
+@import '../../partials/variables';
+@import '../../partials/mixin';
+@import '../../partials/variables';
+
+.video-list {
+    padding: 1rem;
+
+    @include tablet {
+        padding: 1.5rem;
+    }
+
+    @include desktop {
+        padding: 0;
+        height: 90vh;
+        width: 90vw;
+        border-left: 2px solid $text-field-border-color;
+        padding-left: 1rem;
+    }
+
+    &__title{
+        font-family: "Avenir Next Demi";
+        color: $text-label-color;
+        font-size: 0.875rem;
+        margin-top: 0;
+        margin-bottom: 3rem;
+
+        @include desktop {
+            margin: 2rem 0;
+        }
+    }
+
+    &__card {
+        padding: 0;
+    }
+}

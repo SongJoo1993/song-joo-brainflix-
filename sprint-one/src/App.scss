@@ -1,0 +1,10 @@
+@import 'partials/mixin';
+@import 'partials/variables';
+
+.divider {
+    
+    @include desktop {
+        @include flex-direction(row);
+        padding: 0 6rem;
+    }
+}

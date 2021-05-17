@@ -1,0 +1,9 @@
+@import '../../partials/mixin';
+@import '../../partials/variables';
+
+.hero {
+
+    @include desktop {
+        padding: 0 0 02rem;
+    }
+}
