@@ -3,6 +3,7 @@
 @import '../../partials/font';
 
 .header {
+    background: yellow;
 
     &__navigation {
         padding: 0 1rem;
@@ -56,6 +57,10 @@
             height: 3rem;
             margin-right: 30%;
         }
+    }
+
+    &__search-icon {
+        
     }
 
     &__search-bar{

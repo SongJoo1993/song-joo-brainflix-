@@ -10,7 +10,6 @@ export const API_KEY = 'adc56a6f-d3f3-4e0a-b470-d20a46a89a2a';
 class App extends Component {
 
   render () {
-    // console.log(videoDetails[0]);
     return(
       <Router>
         <Header />

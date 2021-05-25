@@ -2,6 +2,8 @@
 @import '../../partials/mixin';
 @import '../../partials/font';
 
+
+
 .header {
 
     &__navigation {
@@ -51,6 +53,11 @@
         }
     }
 
+    &__search-icon {
+        position: relative;
+        left: 24px;
+    }
+
     &__logo {
         margin: 1rem 0;
         width: 55%;
@@ -68,6 +75,10 @@
     }
 
     &__search-bar{
+        background-image: url("../../assets/Icons/Icon-search.svg");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-origin: content-box;
         width: 92%;
         height: 2vh;
         padding: 0.937rem;

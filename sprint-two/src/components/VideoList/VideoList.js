@@ -24,6 +24,7 @@ class VideoList extends Component {
 
     render() {
         const previousVideoId = this.props.singleVideo.id;
+        console.log(previousVideoId);
         return(
             <section className="video-list">
                 <h2 className="video-list__title">NEXT VIDEO</h2>
