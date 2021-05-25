@@ -7,7 +7,6 @@ import videoJasonData from "./data/videos.json";
 import videoDetails from "./data/video-details.json";
 import './App.scss';
 
-
 class App extends Component {
 
   state = {
@@ -16,10 +15,11 @@ class App extends Component {
     videos: videoJasonData
   }
   
-  selectedVideo = (id) => {
-    const imageUrl = id.target.currentSrc;
+  selectedVideo = (event,id) => {
+    console.log(event);
+    // console.log(id);
     const videoArray = this.state.mainVideoArray;
-    const newMainVideo = videoArray.find((video) => video.image === imageUrl);
+    const newMainVideo = videoArray.find((video) => video.id === id);
     this.setState({
       mainVideo: newMainVideo
     })
@@ -32,7 +32,7 @@ class App extends Component {
         <HeroImage mainVideo={this.state.mainVideo}/>
         <div className="divider">
           <Hero mainVideo={this.state.mainVideo}/>
-          <VideoList videos={this.state.videos} clickHandler={this.selectedVideo} />
+          <VideoList videos={this.state.videos} mainVideo={this.state.mainVideo} clickHandler={this.selectedVideo} />
         </div>
     </div>
     )

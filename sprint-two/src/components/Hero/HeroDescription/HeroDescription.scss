@@ -1,0 +1,105 @@
+@import '../../../partials/font';
+@import '../../../partials/mixin';
+@import '../../../partials/variables';
+
+.hero__description {
+    padding: 0 1.5rem;
+
+    @include desktop {
+        padding: 0 0 0 2.25rem;
+    }
+}
+
+.hero__description-title {
+    font-family: "Avenir Next Bold";
+    font-size: 1.5rem;
+    line-height: 2rem;
+
+    @include tablet {
+        margin-top: 3.5rem;
+        margin-bottom: 0;
+        font-size: 2.25rem;
+    }
+}
+
+.hero__description-box {
+
+    @include tablet {
+        @include flex-direction(row);
+        border-bottom: 2px solid $text-field-border-color;
+    }
+}
+
+.hero__description-primary-box {
+    margin: 1rem 0;
+    display: flex;
+    align-items: baseline;
+}
+
+.hero__description-publisher {
+    margin: 0;
+    font-family: "Avenir Next Demi";
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+}
+
+.hero__description-date {
+    margin-left: 1rem;
+    font-family: "Avenir Next light";
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    color: $text-label-color;
+}
+
+.hero__description-secondary-box {
+    display: flex;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid $text-field-border-color;
+
+    @include tablet {
+        @include flex-direction(row);
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        padding: 0;
+        border-bottom: none;
+    }
+
+    @include desktop {
+        padding-right: 2rem;
+    }
+}
+
+.hero__description-views {
+    font-family:"Avenir Next Regular";
+    font-size: 0.875rem;
+    margin-right: 1.5rem;
+    display: flex;
+}
+
+.hero__description-views-icon {
+    margin-right: 0.5rem;
+}
+
+.hero__description-likes {
+    font-family:"Avenir Next Regular";
+    font-size: 0.875rem;
+    display: flex;
+}
+
+.hero__description-likes-icon {
+    margin-right: 0.5rem;
+}
+
+.hero__description-paragraph {
+    font-family: "Avenir Next Regular";
+    font-size: 0.812rem;
+    line-height: 1.125rem;
+    padding-top: 2rem;
+    font-family: "Avenir Next Regular";
+
+    @include tablet {
+        padding-bottom: 2rem;
+        width: 75%;
+    }
+}
