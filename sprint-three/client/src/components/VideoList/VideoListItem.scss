@@ -1,0 +1,59 @@
+@import '../../partials/variables';
+@import '../../partials/mixin';
+@import '../../partials/font';
+
+.video-list__card-item {
+    list-style: none;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+
+    @include desktop {
+        margin-bottom: 0;
+        height: 10vh;
+    }
+}
+
+.video-list__card-image {
+    border-radius: 0.5rem;
+    object-fit: fill;
+    max-width: 50%;
+    width: 6.375rem;
+    height: 4.375rem;
+
+    @include tablet {
+        object-fit: cover;
+        max-width: 50%;
+        width: 8.375rem;
+        height: 5.375rem;
+    }
+
+    @include desktop {
+        max-width: 50%;
+        width: 7.5rem;
+        height: 4.375rem;
+    }
+}
+
+.video-list__information{
+    display: flex;
+    flex-direction: column;
+    max-width: 55%;
+}
+
+.video-list__card-title {
+    margin: 0 0 0 1rem;
+    font-size: 0.875rem;
+    font-family: "Avenir Next Regular";
+    line-height: 1.375rem
+}
+
+.video-list__card-publisher {
+    margin: 1rem 0 0 1rem;
+    font-family: "Avenir Next Ult";
+    font-size: 0.75rem;
+
+    @include desktop {
+        margin: 0.312rem 0 0 1rem;
+    }
+}

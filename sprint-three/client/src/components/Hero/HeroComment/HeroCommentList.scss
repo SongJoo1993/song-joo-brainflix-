@@ -1,0 +1,50 @@
+@import '../../../partials/font';
+@import '../../../partials/mixin';
+@import '../../../partials/variables';
+
+.hero__comment-list {
+    @include reset-list;
+}
+
+.hero__comment-item {
+    @include flex-direction(row);
+    border-bottom: 2px solid $text-field-border-color;
+    margin-bottom: 1rem;
+}
+
+.hero__comment-item-image {
+    width: 2.25rem;
+    height: 2.25rem;
+    background-color: $text-field-border-color;
+    border-radius: 50%;
+    position: relative;
+    top: 1.125rem;
+    margin-right: 1rem;
+}
+
+.hero__comment-box {
+    width: 83%;
+    @include flex-direction(row);
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+.hero__comment-name {
+    font-family: "Avenir Next Bold";
+    @include comment-font;
+    width: 50%;
+    margin-bottom: 0;
+}
+
+.hero__comment-date {
+    width: 50%;
+    text-align: right;
+    font-family: "Avenir Next Light";
+    @include comment-font;
+    opacity: 0.5;
+}
+
+.hero__comment-message {
+    font-family: "Avenir Next Light";
+    @include comment-font;
+}
